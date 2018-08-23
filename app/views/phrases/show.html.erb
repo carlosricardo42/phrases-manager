@@ -21,8 +21,12 @@
       </div>
     </div>
     <div class="card-footer text-muted">
-      <%= info(@phrase) %>
-      <%= render partial: 'shared/social', locals: {phrase: @phrase} %>
+      <div class="col-12">
+        <%= info(@phrase) %>
+      </div>
+      <div class="col-12">
+        <%= render partial: 'shared/social', locals: {phrase: @phrase} %>
+      </div>
     </div>
   </div>
   <div class="d-flex">

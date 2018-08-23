@@ -20,6 +20,7 @@
             <%= link_to phrase, class: 'btn btn-success' do %>
             <i class="fa fa-search"></i>
             <% end %>
+              <%= render partial: 'shared/social', locals: {phrase: phrase} %>
           </td>
         </tr>
       <% end %>
