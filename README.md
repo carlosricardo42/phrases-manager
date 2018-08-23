@@ -16,7 +16,7 @@ To run this application you need to have the next requirements:
 You need to have intalled git.
 
 ```
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+git clone git@github.com:carlosricardo42/phrases-manager.git
 ```
 
 ### Installing
