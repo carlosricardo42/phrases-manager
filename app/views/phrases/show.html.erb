@@ -1,0 +1,33 @@
+<% content_for :head do %>
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="<%= @phrase.title %>" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="<%= phrase_url(@phrase) %>" />
+    <meta property="og:description" content="<%= @phrase.content %>" />
+    <meta property="og:image" content='<%= image_tag("logo.svg",)%>' />
+    <meta property="fb:app_id" content="12345678" />
+  <% end %>
+
+<div class="col-12">
+  <div class="card text-center">
+    <div class="card-header">
+      <strong>Author:</strong> <%= @phrase.person.full_name %>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">  <%= @phrase.title %></h5>
+      <p class="card-text">  <%= @phrase.content %></p>
+      <div id="counter">
+        <%= render partial: 'vote', locals: {phrase: @phrase} %>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <%= info(@phrase) %>
+      <%= render partial: 'shared/social', locals: {phrase: @phrase} %>
+    </div>
+  </div>
+  <div class="d-flex">
+    <div class="ml-auto">
+      <%= link_to 'Back', :back, class: 'btn btn-info' %>
+    </div>
+ </div>
+</div>

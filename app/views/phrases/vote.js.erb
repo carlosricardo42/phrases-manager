@@ -1,0 +1,2 @@
+$('#counter').empty();
+$('#counter').html('<ul><%= escape_javascript(render(partial: "phrases/vote", locals: {phrase: @phrase})).html_safe %></ul>');

@@ -1,0 +1,3 @@
+<%= link_to phrase_vote_path(phrase), method: :put, class: 'btn btn-primary vote', id: "vot", remote: true do %>
+<i class="fa fa-thumbs-up" id="votes"> <%= "#{phrase.votes}"%></i>
+<% end %>

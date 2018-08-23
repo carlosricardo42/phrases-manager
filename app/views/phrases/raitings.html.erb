@@ -1,0 +1,19 @@
+<div class="col-12">
+  <h2>Top 10</h2>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="visit-tab" data-toggle="tab" href="#visit" role="tab" aria-controls="visit" aria-selected="true">Visits</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="vote-tab" data-toggle="tab" href="#vote" role="tab" aria-controls="vote" aria-selected="false">Votes</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="visit" role="tabpanel" aria-labelledby="visit-tab">
+      <%= render partial: 'raiting', locals: {phrases: @visits} %>
+    </div>
+    <div class="tab-pane fade" id="vote" role="tabpanel" aria-labelledby="vote-tab">
+      <%=  render partial: 'raiting', locals: {phrases: @votes} %>
+    </div>
+  </div>
+</div>
