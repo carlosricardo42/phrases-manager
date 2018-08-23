@@ -21,7 +21,7 @@ git clone git@github.com:carlosricardo42/phrases-manager.git
 
 ### Installing
 
-To run the app you need clone the  repository: https://github.com/carlosricardo42/phrases_manager.git
+To run the app you need clone the  repository: https://github.com/carlosricardo42/phrases-manager.git
 
 The next step is open the terminal  or windos command prompt and go to the folder path of the project.
 
