@@ -13,7 +13,8 @@ To run this application you need to have the next requirements:
 
 ### Prerequisites
 
-You need to have intalled git.
+You need to have installed git.
+You can clone the project to your local with the next command.
 
 ```
 git clone git@github.com:carlosricardo42/phrases-manager.git
@@ -21,7 +22,11 @@ git clone git@github.com:carlosricardo42/phrases-manager.git
 
 ### Installing
 
+<<<<<<< HEAD
+To run the app you need to clone the  repository: https://github.com/carlosricardo42/phrases-manager.git
+=======
 To run the app you need clone the  repository: https://github.com/carlosricardo42/phrases-manager.git
+>>>>>>> master
 
 The next step is open the terminal  or windos command prompt and go to the folder path of the project.
 
@@ -36,12 +41,13 @@ bundle or bundle install
 ```
 Before create the database you must modified the secrets.yml and database.yml file
 
-secrets.yml
+- secrets.yml
 ```
 Just change the file extentio of file secrets.yml.bk to secrets.yml
 ```
 
-database.yml: You need to add the password and user data
+- database.yml:
+You need to add the password and user data
 
 ```
 authentication: &authentication
@@ -49,18 +55,18 @@ authentication: &authentication
   password: 'password'
 ```
 
-The next step is create the database
+The next step is create the database.
 
 ```
 rails db:create
 ```
-When the database is created run the migration command
+When the database is created, run the migration command.
 
 ```
 rails db:migrate
 ```
 
-Finally start the Application
+Finally, start the Application.
 
 ```
 rails server

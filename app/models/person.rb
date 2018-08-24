@@ -6,7 +6,7 @@
 
 class Person < ApplicationRecord
   has_many :phrases, dependent: :destroy # ActiveRecord relation with phrases
-  accepts_nested_attributes_for :phrases, allow_destroy: true # Nested model with phrases
+  accepts_nested_attributes_for :phrases, allow_destroy: true # Nested the person model with the phrases model
   validates_presence_of :first_name, :last_name # Validate presence for attributes
 
 =begin

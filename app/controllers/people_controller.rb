@@ -1,5 +1,10 @@
+=begin
+  Class name: PeopleController
+  @Author: Carlos Ricardo Mora Sanchez
+  @description: Controller for the People objects
+=end
 class PeopleController < ApplicationController
-  # Load the person for the  :show, :edit, :update, :destroy methods 
+  # Load the person for the  :show, :edit, :update, :destroy methods
   before_action :set_person, only: [:show, :edit, :update, :destroy]
 
   # GET /people
@@ -42,7 +47,7 @@ class PeopleController < ApplicationController
   # PATCH/PUT /people/1.json
   def update
     respond_to do |format|
-      if @person.update(person_params) # save  the changes of a  person
+      if @person.update(person_params) # save  the changes of a  person object
         format.html { redirect_to @person, notice: 'Person was successfully updated.' }
         format.json { render :show, status: :ok, location: @person }
       else
