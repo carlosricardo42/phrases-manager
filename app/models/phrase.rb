@@ -14,7 +14,7 @@ class Phrase < ApplicationRecord
   scope :votes_raiting, -> { order('votes DESC').includes(:person).limit(10)}
 
 =begin
- This method increment the votes counter by one  of a phrase
+ This method increment the votes counter of a phrase by one
  @return
 =end
   def add_vote
@@ -22,7 +22,7 @@ class Phrase < ApplicationRecord
   end
 
 =begin
- This method decrease the votes counter by one  of a phrase
+ This method decrease the votes counter of a phrase by one
  @return
 =end
   def quit_vote
@@ -30,7 +30,7 @@ class Phrase < ApplicationRecord
   end
 
 =begin
- This method increment the visits counter by one  of a phrases
+ This method increment the visits counter of a phrases by one
  @return
 =end
   def add_visit
@@ -38,7 +38,7 @@ class Phrase < ApplicationRecord
   end
 
 =begin
- This method decrease the votes counter by one  of a phrases
+ This method decrease the votes counter of a phrases by one
  @return
 =end
   def quit_visit

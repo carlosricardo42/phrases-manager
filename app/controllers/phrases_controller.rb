@@ -1,7 +1,13 @@
+=begin
+  Class name: PhrasesController
+  @Author: Carlos Ricardo Mora Sanchez
+  @description: Controller for the Phrases objects
+=end
+
 class PhrasesController < ApplicationController
   # Load the phrase for the  :show, :edit, :update, :destroy methods
   before_action :set_phrase, only: [:show, :edit, :update, :destroy]
-  # Each time that a user visit a phrase path this callback is executed
+  # Each time that a user visit a phrase path this callback is executed to increase the visits
   before_action :new_visit, only: :show
 
   # GET /phrases

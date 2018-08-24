@@ -1,3 +1,8 @@
+=begin
+  Class name: CreatePhrases
+  @Author: Carlos Ricardo Mora Sanchez
+  @description: Migration to create the phrases table on the DB
+=end
 class CreatePhrases < ActiveRecord::Migration[5.1]
   #Create the Phrases table
   def change
